@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>戰略雷達｜每週趨勢儀表板</title>
+<style>
+  :root { --bg:#0b0c10; --fg:#e5e7eb; --muted:#9ca3af; --card:#111827; --ok:#16a34a; --warn:#f59e0b; --bad:#ef4444; }
+  * { box-sizing: border-box; }
+  body { margin: 20px; font-family: system-ui,-apple-system,Segoe UI,Roboto,Noto Sans TC,Helvetica,Arial,sans-serif; background: var(--bg); color: var(--fg);}
+  header { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  header h1 { font-size: 22px; margin:0; }
+  header .time { color: var(--muted); font-size:14px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; margin-top:18px; }
+  .card { background: var(--card); border: 1px solid #1f2937; border-radius: 14px; padding: 14px 16px; }
+  h2 { margin: 0 0 8px; font-size: 16px; }
+  .kpi { font-size: 26px; font-weight: 700; }
+  .pill { display:inline-block; padding:4px 10px; border-radius:999px; font-size:13px; font-weight:600; }
+  .ok { background:#052e16; color:#86efac; border:1px solid #14532d; }
+  .warn { background:#3b2f0b; color:#fde68a; border:1px solid #92400e; }
+  .bad { background:#3f0d12; color:#fecaca; border:1px solid #991b1b; }
+  ul { margin: 8px 0 0 18px; color: var(--muted); }
+  footer { margin-top:22px; color: var(--muted); font-size:12px; }
+  a.btn { display:inline-block; margin-top:10px; padding:10px 12px; border-radius:10px; border:1px solid #374151; color:var(--fg); text-decoration:none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>戰略雷達｜每週趨勢儀表板</h1>
+  <div class="time">更新時間：2025-10-24 07:43</div>
+</header>
+
+<section class="grid">
+  <div class="card">
+    <h2>現金池健康度</h2>
+    <div class="kpi">🟢 約 40 個月</div>
+    <div>門檻：🟢 ≥6 個月｜🟡 3–6｜🔴 &lt;3</div>
+  </div>
+
+  <div class="card">
+    <h2>每月還款佔薪資比率</h2>
+    <div class="kpi">🟢 約 14%</div>
+    <div>門檻：🟢 &lt;30%｜🟡 30–40%｜🔴 &gt;40%</div>
+  </div>
+
+  <div class="card">
+    <h2>房市熱度</h2>
+    <span class="pill warn">觀察期</span>
+    <ul>
+      <li>等待成交量回溫 / 投資客比重上升</li>
+      <li>持續追蹤國強街＆新竹生活圈</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>利率環境</h2>
+    <span class="pill warn">中性 / 橫盤</span>
+    <ul>
+      <li>先鎖額度，不簽長期本息</li>
+      <li>若連續降息訊號 → 轉綠燈</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>行動建議（本週）</h2>
+    <ul>
+      <li>與第一銀行/中信申請理財型房貸「核額」</li>
+      <li>更新國強街 Flip 效率線（IRR ≥ 12% 才賣）</li>
+      <li>維持現金池 ≥ 6 個月</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>策略觸發燈號</h2>
+    <ul>
+      <li>🟢 新竹進場：利率轉寬鬆 + 現金池 ≥ 頭期100%</li>
+      <li>🟢 國強街出場：IRR ≥ 12% + 投資客回流/成交加速</li>
+      <li>🔴 任一指標轉危險 → 立即防守</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div>備註：本頁為決策輔助模板；實際行情以每週報與警報為準。</div>
+</footer>
+</body>
+</html>
